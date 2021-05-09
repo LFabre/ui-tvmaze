@@ -1,0 +1,13 @@
+.detail-screen-info {
+  display: flex;
+  flex: 1;
+  flex-wrap: wrap;
+  margin-top: 2em;
+  margin-bottom: 2em;  
+}
+
+.detail-screen-image {
+  max-width: clamp(250px, 50%, 450px);
+  height: fit-content;
+  margin-right: 2em;
+}

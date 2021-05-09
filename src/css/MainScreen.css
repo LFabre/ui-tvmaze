@@ -1,0 +1,73 @@
+/* Detail Panel */
+.detail-panel-root {
+  display: grid;
+  grid-template-columns: minmax(0,2fr) minmax(0,1fr);
+  column-gap: 2em;
+  width: 100%;
+}
+
+@media only screen and (max-width: 600px) {
+  .detail-panel-root {
+    display: flex;
+    width: 100%;
+  }
+}
+
+.detail-panel-title {
+  display: flex;
+  align-items: baseline;
+  margin-bottom: 0.5em;
+  flex-wrap: wrap;
+}
+
+.detail-panel-premiered {
+  font-size: 18px;
+  margin-left: 0.5em;
+}
+
+.detail-panel-summary {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  font-size: 14px;
+}
+
+/* Episode Row */
+.episode-row-root {
+  display: flex;
+  border-top: 1px solid #404040;
+  margin-top: 5px;
+  padding-top: 5px;
+  cursor: pointer;
+}
+
+.episode-row-image {
+  max-width: clamp(150px, 30%, 300px);
+  height: fit-content;
+}
+
+.episode-row-info {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  padding: 0.5em;
+}
+
+.episode-row-header {
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 5px;
+}
+
+.episode-summary {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  font-size: 14px;
+}
