@@ -4,7 +4,6 @@ import {
   GET_EP_INFO_BEGIN, GET_EP_INFO_SUCCESS, GET_EP_INFO_FAILURE
 } from './../constants/ActionTypes';
 
-
 const acGetEpInfoBegin = () => ({ type: GET_EP_INFO_BEGIN });
 const acGetEpInfoSucces = data => ({
   type: GET_EP_INFO_SUCCESS,
